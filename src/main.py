@@ -8,7 +8,7 @@ espectadores = list()
 
 
 def generarCine():
-    binary_file = open('src/pickled_cine.bin', mode='wb')
+    binary_file = open('pickled_cine.bin', mode='wb')
     print('Generando cine...')
     cine = Cine('', generarPrecio())
     pickle.dump(cine, binary_file)
@@ -19,7 +19,7 @@ def generarCine():
     opcion = int(input('Quieres ver el precio de entrada?\n1. Si\t2. No\n'))
 
     if opcion == 1:
-        binary_file = open('src/pickled_cine.bin', mode='rb')
+        binary_file = open('pickled_cine.bin', mode='rb')
         cine = pickle.load(binary_file)
         print(str(cine.precio) + '€')
         binary_file.close()
@@ -29,7 +29,7 @@ def generarCine():
 
 
 def generarEspectadores():
-    binary_file = open('src/pickled_espectadores.bin', mode='wb')
+    binary_file = open('pickled_espectadores.bin', mode='wb')
     nEspectadores = int(input('Introduce el numero de espectadores que quieres generar: '))
     print('Generando espectadores...')
     for i in range(nEspectadores):
@@ -46,7 +46,7 @@ def generarEspectadores():
 
 
 def generarPelicula():
-    binary_file = open('src/pickled_pelicula.bin', mode='wb')
+    binary_file = open('pickled_pelicula.bin', mode='wb')
     print('Generando pelicula...')
     pelicula = Pelicula('', '', generarEdadMinima(), '')
     pickle.dump(pelicula, binary_file)
@@ -57,7 +57,7 @@ def generarPelicula():
     opcion = int(input('Quieres ver la edad minima de la pelicula?\n1. Si\t2. No\n'))
 
     if opcion == 1:
-        binary_file = open('src/pickled_pelicula.bin', mode='rb')
+        binary_file = open('pickled_pelicula.bin', mode='rb')
         pelicula = pickle.load(binary_file)
         print(str(pelicula.edadMinima) + ' años')
         binary_file.close()
@@ -70,8 +70,8 @@ def llenarSala(matriz):
     generarCine()
     generarPelicula()
     generarEspectadores()
-    binary_file_pelicula = open('src/pickled_pelicula.bin', mode='rb')
-    binary_file_cine = open('src/pickled_cine.bin', mode='rb')
+    binary_file_pelicula = open('pickled_pelicula.bin', mode='rb')
+    binary_file_cine = open('pickled_cine.bin', mode='rb')
     pelicula = pickle.load(binary_file_pelicula)
     cine = pickle.load(binary_file_cine)
 
