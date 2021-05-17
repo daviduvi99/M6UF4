@@ -2,13 +2,13 @@ from setuptools import setup
 
 setup(
     name='M6UF4Cine',
-    packages=['cine/cine'],  # Mismo nombre que en la estructura de carpetas de arriba
-    version='0.4',
+    packages=['cine'],  # Mismo nombre que en la estructura de carpetas de arriba
+    version='0.6',
     license='LGPL v3',  # La licencia que tenga tu paquete
     description='La cosa de UF4 de M6',
     author='David Duran Cunill',
     author_email='daviddc@daviddc.cat',
-    url='https://github.com/daviduvi99/M6UF4Cine',  # Usa la URL del repositorio de GitHub
+    url='https://github.com/daviduvi99/M6UF4Cine/tree/master',  # Usa la URL del repositorio de GitHub
     download_url='https://github.com/daviduvi99/M6UF4Cine/archive/refs/heads/master.zip',
     # Te lo explico a continuación
     keywords='test example develop',  # Palabras que definan tu paquete

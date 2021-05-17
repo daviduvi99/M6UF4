@@ -1,3 +1,5 @@
+LICENSE
+MANIFEST.in
 README.md
 setup.py
 M6UF4Cine.egg-info/PKG-INFO

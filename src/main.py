@@ -1,4 +1,6 @@
-from cine.cine.Clases import *
+from cine.Cine import *
+from cine.Pelicula import *
+from cine.Espectador import *
 
 import numpy as np
 from random import randint
