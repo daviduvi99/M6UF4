@@ -168,6 +168,6 @@ puedes usar el main.py adjunto en el proyecto para probar las que ya estan hecha
 
 URL's:
 
-Repositorio github: https://github.com/daviduvi99/M6UF4Cine
+Repositorio github: https://github.com/daviduvi99/M6UF4Cine/tree/master
 
 Repositorio pypi: https://pypi.org/project/M6UF4Cine/
