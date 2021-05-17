@@ -2,13 +2,14 @@
 
     pip install M6UF4Cine
 
-Una vez tienes el proyecto solo tienes que importar las clases con
-_from cine.cine.Clases import *_.
+Una vez tienes el proyecto solo tienes que importar las clases.
 
 Después solo tienes que hacer tus propias funciones para resolver el problema o
 puedes usar el main.py adjunto en el proyecto para probar las que ya estan hechas.
 
-    from cine.cine.Clases import *
+    from cine.Cine import *
+    from cine.Pelicula import *
+    from cine.Espectador import *
 
     import numpy as np
     from random import randint
