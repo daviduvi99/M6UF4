@@ -1,8 +1,9 @@
+from cine.cine.Clases import *
+
 import numpy as np
 from random import randint
 import pickle
 import time
-from Clases import *
 
 espectadores = list()
 
@@ -16,7 +17,7 @@ def generarCine():
     time.sleep(1.5)
     print('Ya está!')
 
-    opcion = int(input('Quieres ver el precio de entrada?\n1. Si\t2. No\n'))
+    opcion = int(input('Quieres ver el precio de entrada?\\n1. Si\\t2. No\\n'))
 
     if opcion == 1:
         binary_file = open('pickled_cine.bin', mode='rb')
